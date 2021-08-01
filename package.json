@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://programingchicken.github.io/course-directory",
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
