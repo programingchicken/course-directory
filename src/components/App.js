@@ -15,16 +15,16 @@ import NotFound from './NotFound';
 import Featured from './Featured';
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/course-directory">
     <div className="container">
       <Header />
       
       <Switch>
-        <Route exact path="https://programingchicken.github.io/course-directory/" component={Home} />
-        <Route path="https://programingchicken.github.io/course-directory/about" render={ () => <About title='About' /> } />
-        <Route exact path="https://programingchicken.github.io/course-directory/teachers" component={Teachers} />
-        <Route path="https://programingchicken.github.io/course-directory/teachers/:topic/:name" component={Featured} />
-        <Route path="https://programingchicken.github.io/course-directory/courses" component={Courses} />
+        <Route exact path="/" component={Home} />
+        <Route path="/about" render={ () => <About title='About' /> } />
+        <Route exact path="/teachers" component={Teachers} />
+        <Route path="/teachers/:topic/:name" component={Featured} />
+        <Route path="/courses" component={Courses} />
         <Route component={NotFound} />
       </Switch>
     </div>
